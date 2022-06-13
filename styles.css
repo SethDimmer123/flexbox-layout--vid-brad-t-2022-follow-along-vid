@@ -1,0 +1,22 @@
+*{
+    padding:0;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: Arial,Arial, Helvetica, sans-serif;
+}
+
+.flex-container{
+    display:flex;/*This is the parent*/
+    background-color:#f4f4f4;
+}
+
+.item{/*This is the child of the parent element*/
+    width:100px;
+    height:100px;
+    background: #254de4;
+    margin:10px;
+    color:white/*color of text*/
+}
