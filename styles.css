@@ -9,22 +9,29 @@ body{
 }
 
 .flex-container{/*You use flexbox on the parent not the children*/
-     height:400px;/*You need a height to use align-items */
+     height:500px;/*You need a height to use align-items */
     display:flex;/*This is the parent*/
     background-color:#f4f4f4;
+    /* Always on the main axis(vertical) */
+
     /* justify-content:start; */
     /* justify-content:end; */
     /* justify-content:center; */
     /* justify-content:space-around; */
-    justify-content:space-between;
+    /* justify-content:space-between; */
     /* justify-content: space-evenly; */
     
-    align-items:center;
-    /* align-items: flex-start; */
+    /* Always on the cross axis (horizontally) */
+    /* align-items:center; */
+    align-items: flex-start;
 
     /* If i want to create a column i use flex-direction */
-    flex-direction:column;
+    /* flex-direction:column; */
+    /* flex-direction: row;This is the default */
+    /* flex-direction:row-reverse; */
     
+    flex-wrap: wrap;
+    /*Stopped at 17:25*/
 }
 
 
@@ -33,7 +40,12 @@ body{
     height:100px;
     background: #254de4;
     margin:10px;
-    color:white/*color of text*/
+    color:white;/*color of text*/
+
+    display:flex;/*the text inside the boxes*/
+    justify-content: center;
+    align-items: center;
+
 }
 
 .item:nth-of-type(1){
