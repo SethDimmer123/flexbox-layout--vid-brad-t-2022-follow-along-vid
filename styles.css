@@ -9,7 +9,7 @@ body{
 }
 
 .flex-container{/*You use flexbox on the parent not the children*/
-     height:500px;/*You need a height to use align-items */
+     height:110px;/*You need a height to use align-items */
     display:flex;/*This is the parent*/
     background-color:#f4f4f4;
     /* Always on the main axis(vertical) */
@@ -30,8 +30,7 @@ body{
     /* flex-direction: row;This is the default */
     /* flex-direction:row-reverse; */
     
-    flex-wrap: wrap;
-    /*Stopped at 17:25*/
+    /* flex-wrap: wrap; */
 }
 
 
