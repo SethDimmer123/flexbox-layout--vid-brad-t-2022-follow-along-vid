@@ -36,7 +36,7 @@ body{
 
 .item{/*This is the child of the parent element*/
     width:100px;/*You can also change width to flex-basis*/
-    flex-grow:1;/*Since i set this all to 1 they will all grow to :1 when the screen is at it's maximum screen size item 3 will be a bit bigger because the*/
+    flex-grow:1;/*Since i set this all to 1 they will all grow to :1 when the screen is at it's maximum screen size item 3 will be a bit bigger*/
     height:100px;
     background: #254de4;
     margin:10px;
