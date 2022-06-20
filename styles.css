@@ -35,8 +35,11 @@ body{
 
 
 .item{/*This is the child of the parent element*/
-    width:100px;/*You can also change width to flex-basis*/
-    flex-grow:1;/*Since i set this all to 1 they will all grow to :1 when the screen is at it's maximum screen size item 3 will be a bit bigger because i set the flex basis to 200px instead of a width of 100px in the .item class*/
+    /* flex-basis:300px; */
+    /*You can also change width to flex-basis*/
+    /* flex-grow:1; */
+    /*Since i set this all to 1 they will all grow to :1 when the screen is at it's maximum screen size item 3 will be a bit bigger because i set the flex basis to 200px instead of a width of 100px in the .item class*/
+    /* width: ; */
     height:100px;
     background: #254de4;
     margin:10px;
@@ -45,28 +48,34 @@ body{
     display:flex;/*the text inside the boxes*/
     justify-content: center;
     align-items: center;
-
 }
 
 .item:nth-of-type(1){
     /*If i want to move an individual box use this*/
 /* align-self: start; */
 /* order:2; */
-flex-grow: 1;
+/* flex-grow: 1; */
+/* flex-shrink:1; */
 }
 
 .item:nth-of-type(2){
 /* align-self: center; */
 /* order:1; */
 /*Changes the order of the boxes based on the number*/
-flex-grow:1;
+/* flex-grow:1; */
+/* flex-shrink:2; */       /*You get rid of the flex-shrink*/
 }
 
 .item:nth-of-type(3){
 /* align-self:end; */
 /* order:3; */
-flex-basis: 200px;
+/* flex-basis: 200px; */
 /*flex -basis changes the "width" of whatever it is targeting*/
-flex-grow:1;
+/* flex-grow:1; */
 /*flex-grow starts off at the basis of whatever i set the flex-basis but it grows with the screen size*/
+/* flex-shrink:3; */
 }
+
+/* flex-property */
+
+/* This is a combination of flex-basis,flex-grow, and flex-shrink */
