@@ -35,7 +35,8 @@ body{
 
 
 .item{/*This is the child of the parent element*/
-    width:100px;
+    width:100px;/*You can also change width to flex-basis*/
+    flex-grow:1;/*Since i set this all to 1 it is overriding the nth of type*/
     height:100px;
     background: #254de4;
     margin:10px;
@@ -50,16 +51,22 @@ body{
 .item:nth-of-type(1){
     /*If i want to move an individual box use this*/
 /* align-self: start; */
-order:2;
+/* order:2; */
+flex-grow: 1;
 }
 
 .item:nth-of-type(2){
 /* align-self: center; */
-order:1;
+/* order:1; */
 /*Changes the order of the boxes based on the number*/
+flex-grow:1;
 }
 
 .item:nth-of-type(3){
 /* align-self:end; */
-order:3;
+/* order:3; */
+flex-basis: 200px;
+/*flex -basis changes the "width" of whatever it is targeting*/
+flex-grow:1;
+/*flex-grow starts off at the basis of whatever i set the flex-basis but it grows with the screen size*/
 }
