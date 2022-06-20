@@ -50,12 +50,16 @@ body{
 .item:nth-of-type(1){
     /*If i want to move an individual box use this*/
 /* align-self: start; */
+order:2;
 }
 
 .item:nth-of-type(2){
 /* align-self: center; */
+order:1;
+/*Changes the order of the boxes based on the number*/
 }
 
 .item:nth-of-type(3){
 /* align-self:end; */
+order:3;
 }
